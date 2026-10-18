@@ -1,0 +1,18 @@
+# Velvi
+
+> All tools and AI effects
+
+Velvi: AI Face & Photo Editor. iPhone app, available on the App Store: https://apps.apple.com/app/id6805940779?pt=128839649&ct=ai_web
+
+## Guides
+
+- [Free Photo Editor Like Picsart for iPhone: Velvi, Snapseed and Others Compared](https://jjjulietttee-jpg.github.io/velvi-app/free-photo-editor-like-picsart-for-iphone): An honest comparison of free iPhone photo editors that cover what people use Picsart for: effects, retouch, background tools, collage, text and stickers.
+- [How to Add a Golden Hour Effect to a Photo on iPhone](https://jjjulietttee-jpg.github.io/velvi-app/how-to-add-golden-hour-effect-to-a-photo-on-iphone): Turn a flat midday photo into a warm golden hour shot on iPhone with Velvi's AI Golden Hour effect.
+- [How to Add a Light Leak or Lens Flare Effect to Photos on iPhone](https://jjjulietttee-jpg.github.io/velvi-app/how-to-add-light-leak-effect-to-photos-on-iphone): Add lens flare, light leaks, bokeh and film dust to iPhone photos and place the light source where you want it.
+- [How to Get a Film Look on iPhone Photos](https://jjjulietttee-jpg.github.io/velvi-app/how-to-get-a-film-look-on-iphone-photos): Give iPhone photos a 35mm film look with Velvi's Film filters, grain and fade controls, or the AI Film effect.
+- [How to Retouch a Face and Smooth Skin on iPhone](https://jjjulietttee-jpg.github.io/velvi-app/how-to-retouch-face-and-smooth-skin-on-iphone): Smooth skin, even the tone and reshape the face on iPhone without the plastic look, using Velvi's Retouch tool.
+
+## App
+
+- [Home](https://jjjulietttee-jpg.github.io/velvi-app/): what Velvi does, features, pricing
+- [App Store](https://apps.apple.com/app/id6805940779?pt=128839649&ct=ai_web): download, screenshots, reviews

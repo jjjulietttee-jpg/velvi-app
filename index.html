@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content="app_farm ai_site scaffold" />
+<title>Velvi: AI Face &amp; Photo Editor — AI effects, film looks and face retouch for iPhone photos</title>
+<meta name="description" content="Velvi is an iPhone photo editor that combines 23 AI effects (golden hour, blue hour, flash, film, restore and more) with the manual tools people expect:…" />
+<link rel="canonical" href="https://jjjulietttee-jpg.github.io/velvi-app/" />
+<meta name="robots" content="index, follow, max-snippet:-1" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Velvi" />
+<meta property="og:title" content="Velvi: AI Face &amp; Photo Editor — AI effects, film looks and face retouch for iPhone photos" />
+<meta property="og:description" content="Velvi is an iPhone photo editor that combines 23 AI effects (golden hour, blue hour, flash, film, restore and more) with the manual tools people expect:…" />
+<meta property="og:url" content="https://jjjulietttee-jpg.github.io/velvi-app/" />
+<meta property="og:image" content="https://jjjulietttee-jpg.github.io/velvi-app/app-icon.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="apple-itunes-app" content="app-id=6805940779, app-argument=https://apps.apple.com/app/id6805940779?pt=128839649&amp;ct=ai_web" />
+<meta name="theme-color" content="#F7F7F5" />
+<link rel="icon" href="https://jjjulietttee-jpg.github.io/velvi-app/app-icon.png" type="image/png" />
+<link rel="apple-touch-icon" href="https://jjjulietttee-jpg.github.io/velvi-app/app-icon.png" />
+<style>
+:root{color-scheme:light dark;--space-1:8px;--space-2:16px;--space-3:24px;--space-4:40px;--space-5:64px;--radius-sm:12px;--radius-md:18px;--radius-pill:999px;--measure:760px;--font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-size:17px;--font-size-lede:19px;--font-size-small:14px;--bg:#F7F7F5;--surface:#FFFFFF;--surface-soft:#F0F0EC;--text:#1B1B1A;--text-secondary:#5F5F5A;--border:rgba(0,0,0,.09);--accent:#2F5BD3;--on-accent:#FFFFFF;--accent-strong:#284EB5;--accent-tint:rgba(47,91,211,.09)}
+@media (prefers-color-scheme:dark){:root{--bg:#111112;--surface:#18181A;--surface-soft:#1F1F22;--text:#F2F2F0;--text-secondary:#A2A29C;--border:rgba(255,255,255,.09);--accent:#7C9CF0;--on-accent:#FFFFFF;--accent-strong:#8EAAF2;--accent-tint:rgba(124,156,240,.09)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:var(--font-size);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 var(--space-2)}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:var(--space-2);max-width:var(--measure);margin:0 auto;padding:var(--space-2)}
+.brand{display:flex;align-items:center;gap:var(--space-1);font-weight:700;color:var(--text);text-decoration:none}
+.brand img{width:28px;height:28px;border-radius:7px}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:var(--radius-pill)}
+.btn:hover{background:var(--accent-strong)}
+.btn--sm{padding:8px 16px;font-size:15px}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.15;margin:var(--space-4) 0 var(--space-2);letter-spacing:-.02em}
+h2{font-size:26px;line-height:1.25;margin:var(--space-5) 0 var(--space-2)}
+h3{font-size:19px;margin:var(--space-3) 0 var(--space-1)}
+.lede{font-size:var(--font-size-lede);color:var(--text-secondary)}
+.meta,.note{color:var(--text-secondary);font-size:var(--font-size-small)}
+.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:var(--radius-md);padding:var(--space-2) var(--space-3);margin:var(--space-3) 0}
+.cards{list-style:none;padding:0;display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards li{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-2)}
+.cards b{display:block;margin-bottom:4px}
+.cards a{text-decoration:none;font-weight:600}
+ol.steps{padding-left:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:var(--space-2) var(--space-2) var(--space-2) 64px;margin:var(--space-2) 0;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-md)}
+ol.steps li::before{content:counter(s);position:absolute;left:var(--space-2);top:var(--space-2);width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;display:grid;place-items:center}
+ol.steps b{display:block}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius-md)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--text-secondary);font-weight:600;background:var(--surface)}
+tr:last-child td{border-bottom:0}
+tr.me td{background:var(--accent-tint)}
+details{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-2);margin:var(--space-1) 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin:var(--space-1) 0 0;color:var(--text-secondary)}
+.cta{text-align:center;margin:var(--space-5) 0;padding:var(--space-4) var(--space-2);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md)}
+footer{max-width:var(--measure);margin:var(--space-5) auto var(--space-4);padding:0 var(--space-2);color:var(--text-secondary);font-size:var(--font-size-small)}
+footer a{color:var(--text-secondary)}
+@media (max-width:480px){h2{font-size:22px}ol.steps li{padding-left:56px}.answer{padding:var(--space-2)}}
+
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Velvi: AI Face & Photo Editor",
+ "alternateName": "Velvi",
+ "operatingSystem": "iOS",
+ "applicationCategory": "Photo & Video",
+ "url": "https://jjjulietttee-jpg.github.io/velvi-app/",
+ "description": "Velvi is an iPhone photo editor that combines 23 AI effects (golden hour, blue hour, flash, film, restore and more) with the manual tools people expect: face retouch, film filters, light leaks, brush, background blur and cut-out, collage, text and stickers. Edits are non-destructive: each project…",
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD",
+  "category": "Freemium"
+ },
+ "downloadUrl": "https://apps.apple.com/app/id6805940779?pt=128839649&ct=ai_web",
+ "image": "https://jjjulietttee-jpg.github.io/velvi-app/app-icon.png",
+ "publisher": {
+  "@type": "Person",
+  "name": "Anastassiya Shugaley"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is Velvi?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "An iPhone photo editor with AI effects (golden hour, film, flash, restore), face retouch, film filters, light leaks, background tools, collage, text and stickers."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Velvi free?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The core is free: crop, filters, Auto, text, effects, brush and the basic adjustments. AI effects and the rest of the toolset need Velvi Pro, which is $4.99 per week with a 3-day free trial or $49.99 per year in the US."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does Velvi send my photos to a server?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "AI effects are processed in the cloud through Velvi's own proxy, so the photo you apply an AI effect to is uploaded for that request. Retouch, filters, light effects, brush and background tools run on the device. See the privacy policy for how face data is handled."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are my edits destructive?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. A project stores the original photo and the list of changes, so you can reopen it later and change any setting. Nothing is final until you export."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I choose the export size and format?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. You choose size (original, 2048, 1440 or 1080 px), format and quality, and share straight from the editor."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What iPhones does it support?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Velvi is an iPhone app and requires iOS 17 or later."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://jjjulietttee-jpg.github.io/velvi-app/"><img src="https://jjjulietttee-jpg.github.io/velvi-app/app-icon.png" alt="" width="28" height="28" />Velvi</a>
+  <a class="btn btn--sm" href="https://apps.apple.com/app/id6805940779?pt=128839649&amp;ct=ai_web">Get the App</a>
+</header>
+<main class="wrap">
+  <article>
+    <h1>AI effects, film looks and face retouch for iPhone photos</h1>
+    <p class="lede">Velvi is an iPhone photo editor that combines 23 AI effects (golden hour, blue hour, flash, film, restore and more) with the manual tools people expect: face retouch, film filters, light leaks, brush, background blur and cut-out, collage, text and stickers. Edits are non-destructive: each project keeps the original photo plus the list of changes, so you can reopen it later and move any slider. Crop, filters, Auto, text, effects, brush and basic adjustments are free; AI effects and the rest of the toolset need Velvi Pro.</p>
+    <p><a class="btn" href="https://apps.apple.com/app/id6805940779?pt=128839649&amp;ct=ai_web">Download Velvi on the App Store</a></p>
+    <h2>What Velvi does</h2>
+    <ul class="cards">
+      <li><b>23 AI effects in six categories</b>Popular, Portrait, Flash, Seasonal, Film and Quality: Golden Hour, Dreamy, Blue Hour, Neon Night, Flash, Y2K Digicam, AI Film, Cinematic, Retro 70s, HD Enhance, Restore Photo, Unblur, Colorize and more. A strength slider blends the result with your original.</li>
+      <li><b>Face retouch that keeps the skin real</b>Smooth, skin tone, glow, face slimming, eyes, nose and lips, plus makeup and hair color. Smoothing keeps pores instead of blurring the face, and there is a before/after hold on the photo.</li>
+      <li><b>Film looks and color</b>A Film filter category (Gold 200, Ektar, Superia, Portra, Chrome and others) with Fade, Grain and Warmth controls, 15 adjustments, one-tap Auto and HSL across 8 color ranges.</li>
+      <li><b>Lens flare, light leak and bokeh</b>The Effects tool adds Flare, Light Leak, Bokeh, Dust, Glow and Chromatic fringing. You tap the photo to say where the light comes from.</li>
+      <li><b>Background tools on the device</b>Portrait blur, black-and-white background, solid color or a clean cut-out, using the iPhone&#x27;s own subject detection.</li>
+      <li><b>Brush, collage, text and stickers</b>Brush tools for mosaic, local smoothing, blur, sharpen, dodge, burn, clone and patch; 16 collage layouts; text and stickers on layers you can reorder and edit later.</li>
+
+    </ul>
+    <h2>Guides</h2>
+    <ul class="cards">
+      <li><a href="https://jjjulietttee-jpg.github.io/velvi-app/how-to-add-golden-hour-effect-to-a-photo-on-iphone">How to Add a Golden Hour Effect to a Photo on iPhone</a><br /><span class="note">Turn a flat midday photo into a warm golden hour shot on iPhone with Velvi&#x27;s AI Golden Hour effect.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/velvi-app/how-to-get-a-film-look-on-iphone-photos">How to Get a Film Look on iPhone Photos</a><br /><span class="note">Give iPhone photos a 35mm film look with Velvi&#x27;s Film filters, grain and fade controls, or the AI Film effect.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/velvi-app/how-to-retouch-face-and-smooth-skin-on-iphone">How to Retouch a Face and Smooth Skin on iPhone</a><br /><span class="note">Smooth skin, even the tone and reshape the face on iPhone without the plastic look, using Velvi&#x27;s Retouch tool.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/velvi-app/how-to-add-light-leak-effect-to-photos-on-iphone">How to Add a Light Leak or Lens Flare Effect to Photos on iPhone</a><br /><span class="note">Add lens flare, light leaks, bokeh and film dust to iPhone photos and place the light source where you want it.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/velvi-app/free-photo-editor-like-picsart-for-iphone">Free Photo Editor Like Picsart for iPhone: Velvi, Snapseed and Others Compared</a><br /><span class="note">An honest comparison of free iPhone photo editors that cover what people use Picsart for: effects, retouch, background tools, collage, text and stickers.</span></li>
+
+    </ul>
+        <h2>Price</h2>
+    <p>Crop, filters, Auto, text, effects, brush and basic adjustments (brightness, contrast, saturation, exposure, skin smoothing and skin tone) are free. AI effects and the other Pro tools need Velvi Pro: $4.99 per week with a 3-day free trial, or $49.99 per year (US prices; they vary by country). Cancel any time in Settings &gt; Apple ID &gt; Subscriptions.</p>
+
+        <h2>Frequently asked questions</h2>
+    <details open><summary>What is Velvi?</summary><p>An iPhone photo editor with AI effects (golden hour, film, flash, restore), face retouch, film filters, light leaks, background tools, collage, text and stickers.</p></details>
+    <details><summary>Is Velvi free?</summary><p>The core is free: crop, filters, Auto, text, effects, brush and the basic adjustments. AI effects and the rest of the toolset need Velvi Pro, which is $4.99 per week with a 3-day free trial or $49.99 per year in the US.</p></details>
+    <details><summary>Does Velvi send my photos to a server?</summary><p>AI effects are processed in the cloud through Velvi&#x27;s own proxy, so the photo you apply an AI effect to is uploaded for that request. Retouch, filters, light effects, brush and background tools run on the device. See the privacy policy for how face data is handled.</p></details>
+    <details><summary>Are my edits destructive?</summary><p>No. A project stores the original photo and the list of changes, so you can reopen it later and change any setting. Nothing is final until you export.</p></details>
+    <details><summary>Can I choose the export size and format?</summary><p>Yes. You choose size (original, 2048, 1440 or 1080 px), format and quality, and share straight from the editor.</p></details>
+    <details><summary>What iPhones does it support?</summary><p>Velvi is an iPhone app and requires iOS 17 or later.</p></details>
+
+
+    <div class="cta"><a class="btn" href="https://apps.apple.com/app/id6805940779?pt=128839649&amp;ct=ai_web">Try Velvi on your iPhone</a><p class="note">Free to download on the App Store.</p></div>
+
+  </article>
+
+</main>
+<footer>
+  <a href="https://jjjulietttee-jpg.github.io/velvi-app/">Velvi</a> · <a href="https://jjjulietttee-jpg.github.io/fotra-app/privacy.html">Privacy</a> · <a href="https://jjjulietttee-jpg.github.io/fotra-app/terms.html">Terms</a> · <a href="https://jjjulietttee-jpg.github.io/fotra-app/support.html">Support</a>
+</footer>
+</body>
+</html>
